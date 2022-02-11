@@ -1,0 +1,12 @@
+.recipe-list {
+  border: grey 1px solid;
+  margin: 8px;
+  padding: 8px;
+  transition-delay: 100ms;
+  transition-timing-function: linear;
+  transition-property: background-color;
+}
+
+.recipe-list:hover {
+  background-color: lavender;
+}

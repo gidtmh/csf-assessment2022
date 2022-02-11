@@ -1,0 +1,12 @@
+<h2>{{recipe?.title}}: {{recipeId}}</h2>
+
+<img [src]="recipe?.image" alt="Picture of {{recipe?.title}}" height="300px">
+
+<h4>Ingredients</h4>
+<ul *ngFor="let ingredient of recipe?.ingredients">
+  <li>{{ingredient}}</li>
+</ul>
+
+<h4>Instructions</h4>
+<p>{{recipe?.instruction}}</p>
+<button [routerLink]="['/']">Back</button>
